@@ -1,7 +1,7 @@
 import { COLORS } from '@/constants';
 
 // Icon names as strings for mapping
-export type IconName = 
+export type IconName =
   | 'User'
   | 'MessageCircle'
   | 'UserPlus'
@@ -21,6 +21,7 @@ export interface ChatMessage {
   message: string;
   time: string;
   sent: boolean;
+  icon?: string;
 }
 
 export interface InviteMethod {
